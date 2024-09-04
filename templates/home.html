@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename= 'style.css' )}}">
+</head>
+<body>
+    <div class="conferencias">
+        
+        <h1>Conferencias</h1>
+
+        <div class="conferencia1">
+            <img src="https://yt3.googleusercontent.com/KsGWYn8oRjRWKOff3IcO1VjTPF1UfwCxyC0uJcglvaiI48xnd7nB4KrFFPtMScpQ2l_vjedOEw=s900-c-k-c0x00ffffff-no-rj" alt="" width="30%">
+            <h3>Conferencia: Campus Party Brasil</h3>
+            <h4>Tema: Tecnologia, inovação e empreendedorismo.</h4>
+            <h4>Data: 15/10/24 </h4>
+            <a href="{{ url_for('conferencia1') }}">Ver mais</a>
+        </div>
+
+        <div class="conferencia2">
+            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2022binary_LYNXMPEI0K0S0-FILEDIMAGE.jpg?w=1200&h=1200&crop=1" alt="" width="30%">
+            <h3>Conferencia: Fórum Econômico Brasil</h3>
+            <h4>Tema: Discussões sobre economia, negócios e políticas públicas.</h4>
+            <h4>Data:21/10/24</h4>
+            <a href="{{ url_for('conferencia2') }}">Ver mais</a>
+        </div>
+
+        <div class="conferencia3">
+            <img src="https://storage.googleapis.com/atados-v3/user-uploaded/images/0d3c58f0-d37f-4396-9c2b-cc78a5692a6e.png" alt="" width="30%">
+            <h3>Conferencia: Social Good Brasil</h3>
+            <h4>Tema: Inovação, impacto social e práticas sustentáveis.</h4>
+            <h4>Data: 12/11/24</h4>
+            <a href="{{ url_for('conferencia3') }}">Ver mais</a>
+        </div>
+
+    </div>
+</body>
+</html>
